@@ -1,0 +1,10 @@
+- # provider is the name of the provider
+  provider: aws
+  # id is the name of the provider id
+  id: {accountId}
+  # aws_access_key is the access key for AWS account
+  aws_access_key: {accessKeyId}
+  # aws_secret_key is the secret key for AWS account
+  aws_secret_key: {secretAccessKey}
+  # aws_session_token session token for temporary security credentials retrieved via STS (optional)
+  aws_session_token: {sessionToken}
