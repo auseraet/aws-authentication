@@ -19,9 +19,9 @@ Once the user Allows the device, the script will provide the _accessToken_ to be
 
 ### Usage
 Arguments:
-`--silent | -s` - Don't print debugging information.
-`--start-url` - AWS authentication start url.
-`--region` - AWS region to create a session for.
+* `--silent | -s` - Don't print debugging information.
+* `--start-url` - AWS authentication start url.
+* `--region` - AWS region to create a session for.
 
 ```bash
 python3 authorized_device.py --region 'us-south-2' --start-url 'https://eu-west-1.console.aws.amazon.com/start#/' --silent
@@ -33,11 +33,11 @@ This script uses the output (_accessToken_) from `authorize_device.py` to get in
 ### Usage
 Arguments:
 
-`--accessToken` - Access token to access AWS.
-`--silent | -s` - Don't print debugging information.
-`--template'` - Template to create configuration file.
-`--start-url` - AWS authentication start url.
-`--region` - AWS region to create a session for.
+* `--accessToken` - Access token to access AWS.
+* `--silent | -s` - Don't print debugging information.
+* `--template'` - Template to create configuration file.
+* `--start-url` - AWS authentication start url.
+* `--region` - AWS region to create a session for.
 
 ```bash
 python3 get_accounts.py --region 'us-south-2' --start-url 'https://eu-west-1.console.aws.amazon.com/start#/' --silent --accessToken '<accessToken>' --template template_cloudlist.txt
